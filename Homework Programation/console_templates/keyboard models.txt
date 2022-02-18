@@ -1,0 +1,9 @@
+===================================================
+		PROGRA-UNO STORE
+===================================================
+	  Keyboard Models		     Price
+----------------------------------------------------
+|K-PRO|	 1. SteelSeries Apex Pro	    |$199.99
+|K-BW3|	 2. Razer BlackWidow V3 Pro	    |$225.99
+|K-MXK|	 3. Logitech MX Keys		    |$165.50
+|K-ERG|  5. Logitech ERGO K860		    |$155.39

@@ -1,0 +1,9 @@
+===================================================
+		PROGRA-UNO STORE
+===================================================
+	    RAM Models			     Price
+---------------------------------------------------
+|R-CSV|	 1. Corsair Vengeance Pro SL	    |$94.99
+|R-OWL|	 2. OLOy Owl			    |$80.00
+|R-HPT|	 3. HyperX Predator RGB		    |$97.50
+|R-TTD|  5. Teamgroup T-Force Dark Z	    |$55.99
