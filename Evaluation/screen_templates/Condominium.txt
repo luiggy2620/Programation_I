@@ -1,0 +1,10 @@
+===================================================
+		CONDOMINIUM
+===================================================
+	1. parcels size
+	2. parcels w/ prices
+	3. selled parcels
+	4. reserverd parcels
+	5. blocks w/ all free parcels
+	6. Problem 1
+	7. Problem 2
