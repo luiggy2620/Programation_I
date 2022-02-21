@@ -34,7 +34,7 @@ public class Receipt {
     private void userData() {
         System.out.println("-".repeat(characters));
         System.out.print("Please insert your name: ");
-        userName = Utils.sn.nextLine();
+        userName = Utils.sn.next();
         System.out.print("Please insert your NIT: ");
         userNIT = Utils.sn.nextInt();
         System.out.println();

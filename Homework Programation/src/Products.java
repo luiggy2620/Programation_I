@@ -89,26 +89,37 @@ public class Products {
     public void sortProduct(int option) {
         switch (option) {
             case 1:
-                mouse();
+                Utils.showHeader();
+                showProductHeader("Mouse");
+                showProducts("U");
                 break;
             case 2:
-                keyboard();
+                Utils.showHeader();
+                showProductHeader("Keyboard");
+                showProducts("K");
                 break;
             case 3:
-                monitor();
+                Utils.showHeader();
+                showProductHeader("Monitor");
+                showProducts("M");
                 break;
             case 4:
-                ram();
+                Utils.showHeader();
+                showProductHeader("RAM");
+                showProducts("R");
                 break;
             case 5:
-                sdd();
+                Utils.showHeader();
+                showProductHeader("SDD");
+                showProducts("S");
                 break;
             case 6:
-                cpu();
+                Utils.showHeader();
+                showProductHeader("CPU");
+                showProducts("C");
                 break;
             default:
                 System.out.println("Wrong option try again");
-                sortProduct(option);
                 break;
         }
     }
@@ -150,48 +161,6 @@ public class Products {
             }
             dictProducts.put(code, arrangedList);
         }
-    }
-
-    void mouse() {
-        Utils.showHeader();
-        showProductHeader("Mouse");
-        String indicator = "U";
-        showProducts(indicator);
-    }
-
-    void keyboard() {
-        Utils.showHeader();
-        showProductHeader("Keyboard");
-        String indicator = "K";
-        showProducts(indicator);
-    }
-
-    void monitor() {
-        Utils.showHeader();
-        showProductHeader("Monitor");
-        String indicator = "M";
-        showProducts(indicator);
-    }
-
-    void ram() {
-        Utils.showHeader();
-        showProductHeader("RAM");
-        String indicator = "R";
-        showProducts(indicator);
-    }
-
-    void sdd() {
-        Utils.showHeader();
-        showProductHeader("SDD");
-        String indicator = "S";
-        showProducts(indicator);
-    }
-
-    void cpu() {
-        Utils.showHeader();
-        showProductHeader("CPU");
-        String indicator = "C";
-        showProducts(indicator);
     }
 
 }
