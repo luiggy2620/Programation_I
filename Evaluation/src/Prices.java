@@ -1,18 +1,17 @@
 import java.util.Dictionary;
 import java.util.Hashtable;
 
-public class Block_manager {
+public class Prices {
     int lineChar;
     Dictionary<String, double[]> blocks;
 
-    public Block_manager(){
+    public Prices(){
         blocks = new Hashtable<>();
         lineChar = 55;
         fillList();
     }
-
     void fillList(){
-        //red block
+        //red block   H, W, Free, Reserved, Sold
         double[] rSize = {40.6, 34.9, 6};
         blocks.put("R", rSize);
 
@@ -34,13 +33,16 @@ public class Block_manager {
     }
 
     void showBlockInfo(){
-        for (int i = 0; i <= 4; i++) {
+        for (int i = 0; i < 5; i++) {
             // Title
             String name = Utils.blocksNames[i];
             String colorCode = String.valueOf(name.charAt(0));
             double height = blocks.get(colorCode)[0];
             double width = blocks.get(colorCode)[1];
-            String surface  = String.format("%.2f", height*width);
+            double surface  = height*width;
+            String handCash = String.format("%.2f", surface*75);
+            String credit = String.format("%.2f", surface*150);
+
             int parcelQuantity = (int) blocks.get(colorCode)[2];
 
             System.out.println("=".repeat(lineChar));
@@ -48,18 +50,18 @@ public class Block_manager {
             System.out.println("=".repeat(lineChar));
 
             // Details
-            System.out.println("   CODE" + "\t\t" + "HEIGHT[m]" + "\t\t" + "WIDTH[m]" + "\t\t" + "SURFACE[m2]");
+            System.out.println("   CODE" + "\t\t\t\t" + "CONTADO"+ "\t\t\t\t" + "CREDITO");
             System.out.println("-".repeat(lineChar));
-            for (int parcel = 1; parcel < parcelQuantity; parcel++) {
+            for (int parcel = 1; parcel <= parcelQuantity; parcel++) {
                 System.out.print("|" + colorCode + "-00" + parcel + "\t\t" );
-                System.out.println("|" + height + "\t\t" + "|" + width + "\t\t" + "|" + surface);
+                System.out.println("\t\t" + "|$" + handCash + "\t\t" + "|$" + credit);
             }
-            System.out.println(" ");
+            System.out.println("\n");
         }
     }
 
     public static void main(String[] args) {
-        Block_manager block = new Block_manager();
-        block.showBlockInfo();
+        Prices price = new Prices();
+        price.showBlockInfo();
     }
 }
