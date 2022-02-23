@@ -8,9 +8,9 @@ public class Condominium {
         System.out.println("-".repeat(lineChar));
 
         System.out.println("\t1. Parcels Size ");
-        System.out.println("\t2. Parcels Prices\n");
-        System.out.println("\t3. Sold parcels\n");
-        System.out.println("\t4. Reserved parcels\n");
+        System.out.println("\t2. Parcels Prices");
+        System.out.println("\t3. Sold parcels");
+        System.out.println("\t4. Reserved parcels");
         System.out.println("\t5. Free parcels\n");
     }
 
