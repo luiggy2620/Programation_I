@@ -60,8 +60,4 @@ public class Prices {
         }
     }
 
-    public static void main(String[] args) {
-        Prices price = new Prices();
-        price.showBlockInfo();
-    }
 }
